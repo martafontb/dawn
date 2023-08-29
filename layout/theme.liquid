@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
+    <link rel="preload" href="{{ 'fonts.css' | asset_url }}" as="style">
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
@@ -14,6 +15,7 @@
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
+
 
     <title>
       {{ page_title }}
@@ -223,11 +225,13 @@
         min-height: 100%;
         margin: 0;
         font-size: 1.5rem;
-        letter-spacing: 0.06rem;
         line-height: calc(1 + 0.8 / var(--font-body-scale));
-        font-family: var(--font-body-family);
+        /* font-family: var(--font-body-family); */
+        font-family: 'Modern Era';
         font-style: var(--font-body-style);
         font-weight: var(--font-body-weight);
+        background-color: #FFFBEE !important;
+        color: #5F1D1B;
       }
 
       @media screen and (min-width: 750px) {

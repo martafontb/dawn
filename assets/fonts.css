@@ -1,0 +1,10 @@
+/* Import fonts here */
+@font-face {
+    font-family: 'Bradford';
+    src: url('BradfordLLSub-Book.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Modern Era';
+    src: url('ModernEra-Book.woff2') format('woff2');
+}

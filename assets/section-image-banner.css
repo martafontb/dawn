@@ -2,6 +2,8 @@
   display: flex;
   position: relative;
   flex-direction: column;
+  margin: 0px 16px;
+  background-color: #FFFBEE !important;
 }
 
 .banner__box {
@@ -162,6 +164,7 @@
   left: 0;
   top: 0;
   width: 100%;
+  border-radius: 20px;
 }
 
 .banner__media-half {

@@ -326,6 +326,6 @@ h2,
 
 .gradient {
   background: rgb(var(--color-background));
-  background: var(--gradient-background);
+  /* background: var(--gradient-background); */
   background-attachment: fixed;
 }
